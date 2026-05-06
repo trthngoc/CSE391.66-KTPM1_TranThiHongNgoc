@@ -23,7 +23,7 @@
 .menu a {
     text-decoration: none;
     color: var(--color-dark);
-    font-size: var(--font-size-base);
+    font-size: 1rem;
 }
 .menu a:hover {
     color: var(--color-primary);
