@@ -1,0 +1,31 @@
+.header {
+    position: sticky;
+    top: 0px;
+    padding: 15px;
+    z-index: 1000;
+    display: flex;
+    background-color: var(--color-light);
+    width: 100%;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.menu{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: var(--font-size-base);
+}
+.menu a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
