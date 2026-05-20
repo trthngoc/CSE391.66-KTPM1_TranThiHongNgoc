@@ -29,7 +29,7 @@ session_03_javascript/
 │   ├── 03_form_validation.md
 │   ├── 04_theme_toggle.md
 │   ├── 05_todo_app_crud.md      ← Nâng cao
-│   ├── 06_movie_search_api.md   ← Nâng cao
+│   ├── 06_movie_search_api.md   ← Nâng cao[]
 │   ├── 07_shopping_cart.md      ← Nâng cao
 │   └── 08_weather_dashboard.md  ← Nâng cao
 ├── solutions/            ← Solution
