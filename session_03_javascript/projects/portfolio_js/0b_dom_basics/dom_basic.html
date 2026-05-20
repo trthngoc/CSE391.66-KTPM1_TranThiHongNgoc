@@ -52,6 +52,27 @@
         console.log(allItems[0].classList.contains('highlight'));
         allItems[1].classList.toggle('text-red');
         allItems.forEach(item => {item.classList.remove('highlight');});
+
+        //0b.6
+        allItems.forEach((item, index) => {
+            if (index%2 === 0) {
+                item.style.color = '#dbeafe';
+            } else {
+                item.style.color = '#fce7f3';
+            }
+            item.style.fontSize = `${(index + 1) * 14}px`;
+        });
+
+        //0b.7
+        function themMonHoc(tenMon) {
+            const li = document.createElement("li");
+            li.classList.add("item");
+            li.textContent = tenMon;
+            const ul = document.getElementById("danh-sach");
+            ul.appendChild(li);
+        }
+        themMonHoc("Vue.js");
+        themMonHoc("Node.js");
     </script>
 </body>
 </html>
