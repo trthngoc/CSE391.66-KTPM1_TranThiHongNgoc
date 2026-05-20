@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM Basics</title>
+    <style>
+        .highlight {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 0.5rem;
+        }
+
+        .bold { font-weight: bold; }
+        .text-red { color: #ef4444; }
+        .hidden { display: none; }
+    </style>
 </head>
 <body>
     <h1 id="title">Xin chào DOM!</h1>
@@ -33,6 +44,14 @@
         firstDesc.textContent = "Tôi đang học DOM.";
         allItems[0].innerHTML = "<strong>HTML5</strong>";
         allItems.forEach(item => item.textContent += " (đã học)");
+
+        //0b.4, 0b.5
+        allItems.forEach(item => {item.classList.add('highlight');});
+        allItems.forEach((item, index) => {item.setAttribute('data-learned', index);});
+        document.title = "DOM Practice";
+        console.log(allItems[0].classList.contains('highlight'));
+        allItems[1].classList.toggle('text-red');
+        allItems.forEach(item => {item.classList.remove('highlight');});
     </script>
 </body>
 </html>
