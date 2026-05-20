@@ -111,6 +111,34 @@
         console.log(`Địa chỉ: phường ${hoSo.diaChi.phuong}, quận ${hoSo.diaChi.quan}, thành phố ${hoSo.diaChi.thanhPho}`);
         hoSo.email = "abc123@gmail.com";
         console.log("Email:", hoSo.email);
+
+        // 0.9 - Hàm cơ bản
+        function maxHaiSo(a, b) {
+            if (a > b) {
+                return a;
+            } else if (b > a) {
+                return b;
+            } else {
+                return "Hai số bằng nhau";
+            }
+        }
+        function laNamNhuan(nam) {
+            if ((nam % 4 === 0 && nam % 100 !== 0) || (nam % 400 === 0)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        const gioiThieu = (ten, tuoi, nganh) => {
+            return `Tôi là ${ten}, ${tuoi} tuổi, học ${nganh}.`;
+        }
+        function tinhGiaBan(giaGoc, giamGia=0) {
+            return giaGoc * (1 - giamGia/100);
+        }
+        console.log("Max của 5 và 10:", maxHaiSo(5, 10));
+        console.log("Năm 2020 có phải năm nhuận?", laNamNhuan(2020));
+        console.log(gioiThieu("Minh", 20, "CNTT"));
+        console.log("Giá bán sau giảm 20%:", tinhGiaBan(100000, 20));
     </script>
 </body>
 </html>
