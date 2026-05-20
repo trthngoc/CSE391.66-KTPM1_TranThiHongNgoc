@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello JavaScript</title>
+</head>
+<body>
+    <h1>Bài tập đầu tiên với JavaScript</h1>
+    <p>Mở Console (F12 → Console) để xem kết quả</p>
+
+    <script>
+        console.log("Xin chào thế giới!");
+        console.log("Tôi đang học JavaScript");
+        console.log(2026);
+
+        let ten = "Minh";
+        let tuoi = 20;
+        let laSinhVien = true;
+
+        console.log("Tên:", ten);        // "Tên: Minh"
+        console.log("Tuổi:", tuoi);      // "Tuổi: 20"
+        console.log("Sinh viên:", laSinhVien); // "Sinh viên: true"
+
+        // Thay đổi giá trị
+        tuoi = 21;
+        console.log("Tuổi mới:", tuoi);  // "Tuổi mới: 21"
+
+        // ===== CONST — hằng số, KHÔNG thể thay đổi =====
+        const PI = 3.14159;
+        const TEN_TRUONG = "Đại học Thủy Lợi";
+
+        console.log("PI =", PI);
+        console.log("Trường:", TEN_TRUONG);
+
+        // ❌ Thử thay đổi const sẽ bị lỗi:
+        // PI = 3.14;  // TypeError: Assignment to constant variable
+
+        // ===== VAR — cách cũ, ít dùng =====
+        var monHoc = "CSE391";
+        console.log("Môn:", monHoc);
+    </script>
+</body>
+</html>
+
+<!-- console.log() sẽ in ra trong tab console của DevTool, còn document.write() sẽ in ngay tại trang web-->
