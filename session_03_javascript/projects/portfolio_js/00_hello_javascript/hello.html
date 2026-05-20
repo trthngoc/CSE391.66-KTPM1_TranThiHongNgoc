@@ -13,6 +13,7 @@
         console.log("Tôi đang học JavaScript");
         console.log(2026);
 
+        // 0.2 - Khai báo biến
         let ten = "Minh";
         let tuoi = 20;
         let laSinhVien = true;
@@ -38,6 +39,78 @@
         // ===== VAR — cách cũ, ít dùng =====
         var monHoc = "CSE391";
         console.log("Môn:", monHoc);
+
+        // 0.3 - Các kiểu dữ liệu cơ bản
+        let tenMonHoc = "CSE391";
+        let soTinChi = 3;
+        let laMonBatBuoc = true;
+        let diemSo = 5;
+        console.log("Tên môn:", tenMonHoc); // "Tên môn: CSE391"
+        console.log("Số tín chỉ:", soTinChi); // "Số tín chỉ: 3"
+        console.log("Môn bắt buộc:", laMonBatBuoc); // "Môn bắt buộc: true"
+        console.log("Điểm số:", diemSo); // "Điểm số: undefined"
+
+        // 0.4 - Template literals (chuỗi mẫu)
+        let sanPham = "Laptop";
+        let soLuong = 2;
+        let donGia = 15000000;
+        let hoaDon = `Hóa đơn: ${soLuong} x ${sanPham} = ${soLuong * donGia} VND`;
+        console.log(hoaDon);
+
+        // 0.5 - Toán tử cơ bản
+        const pi = 3.14159;
+        let banKinh = 5;
+        let dienTich = pi * banKinh * banKinh;
+        let chuVi = 2 * pi * banKinh;
+        console.log("Diện tích hình tròn:", dienTich);
+        console.log("Chu vi hình tròn:", chuVi);
+
+        // 0.6 - Toán tử so sánh
+        let diem = 7.5;
+        let diemChuyenCan = 9;
+        if (diem >= 5 && diemChuyenCan >= 8) {
+            console.log("Đạt");
+        } else {
+            console.log("Không đạt");
+        }
+        if (diem >= 8.5) {
+            console.log("Giỏi");
+        } else if (diem >= 7) {
+            console.log("Khá");
+        } else if (diem >= 5) {
+            console.log("Trung bình");
+        } else {
+            console.log("Yếu");
+        }
+
+        // 0.7 - Kiểu dữ liệu Array
+        let mAYT = ["Phở", "Bún chả", "Cơm tấm", "Bánh mì", "Gỏi cuốn"];
+        console.log("Món ăn yêu thích 1:", mAYT[0]);
+        console.log(`Món ăn yêu thích ${mAYT.length}:`, mAYT[mAYT.length - 1]);
+        mAYT.unshift("Bánh xèo");
+        mAYT.pop();
+        mAYT.forEach((mon, index) => {
+            console.log(`Món ăn ${index + 1}: ${mon}`);
+        });
+        console.log(mAYT.includes("Phở"));
+
+        // 0.8 - Kiểu dữ liệu Object
+        let hoSo = {
+            hoTen : "Nguyễn Văn A",
+            tuoi : 22,
+            nganh : "CNTT",
+            soThich : ["Đọc sách", "Nghe nhạc", "Đi dạo"],
+            diaChi : {
+                thanhPho : "Hà Nội",
+                quan : "Cầu Giấy",
+                phuong : "Dịch Vọng"
+            }
+        };
+        console.log(`Tôi là ${hoSo.hoTen}, ${hoSo.tuoi} tuổi, học ngành ${hoSo.nganh}.`);
+        console.log("Sở thích 1:", hoSo.soThich[0]);
+        console.log(`Địa chỉ: phường ${hoSo.diaChi.phuong}, quận ${hoSo.diaChi.quan}, thành phố ${hoSo.diaChi.thanhPho}`);
+        hoSo.email = "abc123@gmail.com";
+        console.log("Email:", hoSo.email);
     </script>
 </body>
 </html>
